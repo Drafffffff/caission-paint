@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"
+    integrity="sha256-w7+V9/jcjUhs0pVV3uaphYQbXkTJZkd/3CfsinPRzvM="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/gh/bmoren/p5.collide2D@0.6/p5.collide2d.min.js"></script>
+  <script src="./script.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .color1 {
+      background-color: #b46530;
+    }
+    .color2 {
+      background-color: #95c7b6;
+    }
+    .color3 {
+      background-color: #f3ede4;
+    }
+    .color4 {
+      background-color: #dab05d;
+    }
+  </style>
+  <body>
+    <div id="canvas"></div>
+    <div class="">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        onclick="changeProcessFlag(1)"
+      >
+        垂幔
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        onclick="changeProcessFlag(2)"
+      >
+        边饰
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        onclick="changeProcessFlag(3)"
+      >
+        井心
+      </button>
+    </div>
+    <div class="">
+      <button
+        type="button"
+        class="btn color1"
+        onclick="changeColor(0)"
+      ></button>
+      <button
+        type="button"
+        class="btn color2"
+        onclick="changeColor(1)"
+      ></button>
+      <button
+        type="button"
+        class="btn color3"
+        onclick="changeColor(2)"
+      ></button>
+      <button
+        type="button"
+        class="btn color4"
+        onclick="changeColor(3)"
+      ></button>
+    </div>
+  </body>
+</html>
